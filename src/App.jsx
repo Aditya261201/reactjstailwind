@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Landing from "./components/Landing"
 import Navbar from "./components/Navbar"
 
@@ -7,6 +8,7 @@ function App() {
     <div className="overflow-hidden">
       <Navbar/>
       <Landing />
+      <About />
     </div>
   )
 }
