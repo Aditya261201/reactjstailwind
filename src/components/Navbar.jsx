@@ -8,10 +8,10 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='w-screen h-[80px] z-10 bg-zinc-400 drop-shadow-lg'>
+            <div className='w-screen h-[5vh] md:h-[10vh] z-10 relative bg-zinc-400 drop-shadow-lg'>
                 <div className='px-2 flex justify-between items-center w-full h-full'>
                     <div className='flex items-center'>
-                        <h1 className='text-3xl font-bold mr-5'>BRAND</h1>
+                        <h1 className='text-2xl md:text-4xl font-bold mr-5'>BRAND</h1>
                         <ul className="hidden md:flex">
                             <li>Home</li>
                             <li>About</li>
