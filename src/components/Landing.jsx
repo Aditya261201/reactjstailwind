@@ -4,7 +4,7 @@ import bgImg from '../assets/cyber-bg.png'
 
 const Hero = () => {
     return (
-            <div className='w-screen h-screen overflow-hidden z-9 bg-zinc-400 flex flex-col justify-between'>
+            <div name='home' className='w-screen h-screen overflow-hidden z-9 bg-zinc-400 flex flex-col justify-between'>
                 <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
                     <div className="flex flex-col justify-center md:items-start w-full pl-3 py-2 md:py-8">
                         <p className="text-xl md:text-2xl">Lorem ipsum dolor sit amet consectetur.</p>

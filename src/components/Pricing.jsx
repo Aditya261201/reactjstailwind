@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-            <div className='w-full h-full bg-blue-900'>
+            <div name='pricing' className='w-full h-full bg-blue-900'>
                 <div className='my-10'>
                     <h2 className='text-center text-slate-500 text-3xl pt-6 lg:text-5xl lg:pt-12'>PRICING</h2>
                     <h3 className='text-center text-white text-4xl my-6 lg:text-6xl lg:my-10'>the right price for your research.</h3>

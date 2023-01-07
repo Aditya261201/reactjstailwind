@@ -2,7 +2,7 @@ import React from 'react'
 
 const AllInOne = () => {
     return (
-        <div className='w-full h-full'>
+        <div name='allinone' className='w-full h-full'>
             <div className='w-full py-8'>
                 <h2 className='text-center font-bold text-3xl lg:text-7xl my-4 lg:mb-16'>All-In-One Platform</h2>
                 <p className='text-center text-sm lg:text-5xl mx-6 lg:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, a. Eius ad dolorem quos ex laudantium cumque ratione nam ab!</p>

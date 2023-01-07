@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
+import { Link, animateScroll as scroll} from 'react-scroll'
+
 
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
     console.log(nav)
     const handleClick = () => setNav(!nav)  // to toggle the nav state.
+    
+    const handleClose = () => setNav(!nav)
 
     return (
         <>
@@ -13,10 +17,11 @@ const Navbar = () => {
                     <div className='flex items-center'>
                         <h1 className='text-2xl md:text-4xl font-bold mr-5'>BRAND</h1>
                         <ul className="hidden md:flex">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Support</li>
-                            <li>Platforms</li>
+                            <li className='cursor-pointer hover:underline'><Link to="home" smooth={true} duration={500}>Home</Link></li>
+                            <li className='cursor-pointer hover:underline'><Link to="about" smooth={true} offset={-20} duration={500}>About</Link></li>
+                            <li className='cursor-pointer hover:underline'><Link to="support" smooth={true} offset={0} duration={500}>Support</Link></li>
+                            <li className='cursor-pointer hover:underline'><Link to="allinone" smooth={true} offset={0} duration={500}>Platforms</Link></li>
+                            <li className='cursor-pointer hover:underline'><Link to="pricing" smooth={true} offset={0} duration={500}>Pricing</Link></li>
                         </ul>
                     </div>
                     <div className="hidden md:flex pr-4">
@@ -36,10 +41,11 @@ const Navbar = () => {
                 </div>
                 {/* if nav state if false then display is hidden and if nav state is true then show the nav-list. */}
                 <ul className={!nav ? 'hidden' : 'absolute bg-zinc-400 w-full'}>
-                    <li className='border-b-2 border-zinc-500 w-full'>Home</li>
-                    <li className='border-b-2 border-zinc-500 w-full'>About</li>
-                    <li className='border-b-2 border-zinc-500 w-full'>Support</li>
-                    <li className='border-b-2 border-zinc-500 w-full'>Platforms</li>
+                    <li className='border-b-2 border-zinc-500 w-full'><Link onClick={handleClose} to="home" smooth={true} offset={50} duration={500}>Home</Link></li>
+                    <li className='border-b-2 border-zinc-500 w-full'><Link onClick={handleClose} to="about" smooth={true} offset={50} duration={500}>About</Link></li>
+                    <li className='border-b-2 border-zinc-500 w-full'><Link onClick={handleClose} to="support" smooth={true} offset={50} duration={500}>Support</Link></li>
+                    <li className='border-b-2 border-zinc-500 w-full'><Link onClick={handleClose} to="allinone" smooth={true} offset={50} duration={500}>Platforms</Link></li>
+                    <li className='border-b-2 border-zinc-500 w-full'><Link onClick={handleClose} to="pricing" smooth={true} offset={50} duration={500}>Pricing</Link></li>
                     <div className='flex flex-col my-4'>
                         <button className='bg-transparent px-8 py-3 text-indigo-800 font-bold mb-4 mx-6'>Sign In</button>
                         <button className='px-8 py-3 mx-6 font-bold'>Sign Up</button>

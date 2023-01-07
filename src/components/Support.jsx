@@ -3,7 +3,7 @@ import support from "../assets/support.jpg"
 
 const Support = () => {
     return (
-        <div className='w-full h-full mt-24'>
+        <div name='support' className='w-full h-full mt-24'>
             <div className='w-full bg-gray-900/80 absolute'>
                 <img className='w-full h-screen object-cover mix-blend-overlay' src={support}></img>
             </div>

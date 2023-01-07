@@ -49,14 +49,14 @@ const Footer = () => {
                         <h3 className='uppercase py-3'>Subscribe to our Newsletter</h3>
                         <p className='my-3'>The latest news, articles, and resources sent to your inbox weekly.</p>
                         <form>
-                            <input className='rounded-md mx-2' type="email" />
+                            <input className='rounded-md mx-2 text-black' type="email" />
                             <button className='px-2 '>Subscribe</button>
                         </form>
                         <div className='py-4'>
-                            <a><FaFacebook className='inline-block mx-3'/></a>
-                            <a><FaTwitter className='inline-block mx-3'/></a>
-                            <a><FaInstagram className='inline-block mx-3'/></a>
-                            <a><FaGithub className='inline-block mx-3'/></a>
+                            <a><FaFacebook className='inline-block mx-3 cursor-pointer'/></a>
+                            <a><FaTwitter className='inline-block mx-3 cursor-pointer'/></a>
+                            <a><FaInstagram className='inline-block mx-3 cursor-pointer'/></a>
+                            <a><FaGithub className='inline-block mx-3 cursor-pointer'/></a>
                         </div>
                     </div>
                     
