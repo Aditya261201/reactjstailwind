@@ -1,5 +1,6 @@
 import About from "./components/About"
 import AllInOne from "./components/AllInOne"
+import Footer from "./components/Footer"
 import Landing from "./components/Landing"
 import Navbar from "./components/Navbar"
 import Pricing from "./components/Pricing"
@@ -15,6 +16,7 @@ function App() {
       <Support />
       <AllInOne />
       <Pricing />
+      <Footer />
     </div>
   )
 }
